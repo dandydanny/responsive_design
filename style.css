@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+
+/*-------------------------------------------------*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	display: block;
+	min-height: 4em;
+	background-color: pink;
+}
+
+.hidden {
+	display: none;
+}
+
+.side {
+	position: fixed;
+	width: 40%;
+	height: 100%;
+	background: url('train_station.jpg');
+	background-size: cover;
+}
+
+.side-content {
+	padding: 10%;
+	padding-top: 30px;
+	color: white;
+}
+
+.main {
+	/*display: inline-block;*/
+	position: relative;
+	left: 40%;
+	width: 60%;
+	background-color: white;
+}
+
+.main-content {
+	padding: 10%;
+	padding-top: 30px;
+	color: dimgray;
+}
+
+h1 {
+	margin: 20px 0;
+	font-weight: 300;
+	font-size: 300%;
+	line-height: 1em;
+}
+
+h2 {
+	margin: 20px 0;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+h3 {
+	margin: 20px 0;
+	font-weight: 800;
+	font-size: 1.0em;
+}
+
+p {
+	font-weight: 300;
+	size: 2.5em;
+	margin: 1em 0;
+}
+
+.business-name {
+	float: left;
+/*	margin: 20px 0;*/
+	font-weight: 800;
+	font-size: 1.0em;
+}
+
+.menu-button {
+	float: right;
+	/*padding: 0 0 2em 2em;*/
+	color: white;
+	background: none;
+	border: none;
+	font-size: 2em;
+	opacity: 0.6;
+}
+
+.menu-button:hover {
+	opacity: 1;
+}
+
+.blog-info {
+	/*margin-right: 0.5em;*/
+	font-size: 0.8em;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: lightgray;
+}
+
+.name-and-button {
+	height: 20px;
+	/*background-color: pink;*/
+	/*display: inline-block;*/
+}
+
+/*800px = 50em*/
+@media (max-width: 50em) {
+  .side {
+  	position: relative;
+		width: 100%;
+		max-height: 30%;
+		background-size: cover;
+  }
+
+  .side h1{
+		font-size: 2em;
+		margin: 0;
+  }
+
+  .main {
+		/*display: inline-block;*/
+		left: 0;
+		width: 100%;
+	}
+}
