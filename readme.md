@@ -1,7 +1,9 @@
-Lightningbolt
-=============
+Responsive Design
+=================
 
-### Lightningbolt
+![Lightningbolt features a clean layout and stunningly-beautiful typogrpahy](http://i29.photobucket.com/albums/c259/dandydanny/DEV/ResponsiveTest_zps6fe0d430.png)
+
+### I Call This Lightningbolt
 A digital playground for responsive design experiments
 
 ### Technology
