@@ -60,20 +60,19 @@ body {
 .body {
 	display: block;
 	position: relative;
-	background-color: rgba(255,0,0,0.2);
+	/*background-color: rgba(255,0,0,0.2);*/
 	z-index: 10;
-	box-shadow: 0 0 50px 5px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px 5px rgba(255,255,255,1 );
 }
 
 .nav {
-	display: block;
-	box-sizing: border-box;
-	position: absolute;
+	position: fixed;
+	/*display: block;*/
+	/*box-sizing: border-box;*/
 	height: 100%;
 	width: 300px;
-	background-color: dimgray;
+	background-color: rgba(34, 155, 213, 1);
 	color: white;
-	position: absolute;
 	z-index: 1;
 
 	/*padding: 10%;*/
@@ -88,10 +87,12 @@ body {
 	/*background-color: darkgray;*/
 	v-align: bottom;
 	font-size: 2em;
+	opacity: 0.8;
+	padding: 10%;
 }
 
 .color-1 {
-	background-color: rgba(0, 150, 179, 1);
+	background-color: rgba(3, 221, 221, 1);
 }
 
 .color-2 {
@@ -107,7 +108,7 @@ body {
 }
 
 .nav-links:hover {
-	background-color: lightgray;
+	opacity: 1;
 }
 
 .hidden {
@@ -238,7 +239,7 @@ p {
 hr {
 	border: 0;
 	height: 1px;
-	/*background-color: lightgray;*/
+	background-color: lightgray;
 }
 
 .name-and-button {
