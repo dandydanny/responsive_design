@@ -3,15 +3,19 @@ $(document).ready(function() {
 	$('#menu-button').click(function() {
 		console.log("clicked");
 		// $('.nav').toggleClass( "hidden" );
-		$('.nav').removeClass( "hidden" );
-		$('.nav').addClass( "show" );
+		$('.body').removeClass( "shift-in" );
+		$('.body').addClass( "shift-out");
+		// $('.nav').removeClass( "hidden" );
+		// $('.nav').addClass( "show" );
 		// $(".nav").slideDown();
 	});
 	$('.nav').click(function() {
 		console.log("clicked while open");
 		// $('.nav').toggleClass( "hidden" );
-		$('.nav').removeClass( "show" );
-		$('.nav').addClass( "hidden" );
+		$('.body').removeClass( "shift-out" );
+		$('.body').addClass( "shift-in" );
+		// $('.nav').removeClass( "show" );
+		// $('.nav').addClass( "hidden" );
 		// $(".nav").slideUp();
 	});
 });
