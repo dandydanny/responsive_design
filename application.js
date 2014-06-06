@@ -1,11 +1,10 @@
 $(document).ready(function() {
 	console.log("js ready");
-	// $('.body').addClass( "initial" );
-
 
 	$('#menu-button').click(function() {
 		console.log("hamburger clicked");
 		$('.body').removeClass( "initial" );
+		$('.nav-links').removeClass( "blink" );
 
 		// Special case for the very first hamburger click,
 		// Show nav, shift-out .body
@@ -17,13 +16,13 @@ $(document).ready(function() {
 
 		// Subsequent clicks, we'll just toggle the shift-out and shift-in
 		$('.body').toggleClass( "shift-out");
-		$('.body').toggleClass( "shift-in" );
-		
+		$('.body').toggleClass( "shift-in" );		
 	});
 
 
-	$('.nav').click(function() {
+	$('.nav-links').click(function() {
 		console.log("clicked while open");
+		$(this).toggleClass( "blink" );
 		$('.body').removeClass( "shift-out" );
 		$('.body').addClass( "shift-in" );
 	});

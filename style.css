@@ -124,8 +124,8 @@ body {
 }
 
 .shift-out {
-	-webkit-animation: shift-out 2s;
-	animation: shift-out 2s;
+	-webkit-animation: shift-out 1s;
+	animation: shift-out 1s;
 	left: 300px;
 }
 
@@ -140,9 +140,10 @@ body {
 }
 
 .shift-in {
-	-webkit-animation: shift-in 1s;
-	animation: shift-in 1s;
-	left: 0px;
+	-webkit-animation: shift-in 2s;
+	animation: shift-in 2s;
+	-webkit-animation-delay: 1s;
+/*	left: 0px;*/
 }
 
 @-webkit-keyframes shift-in {
@@ -153,6 +154,22 @@ body {
 @keyframes shift-in {
 	0% 			{left: 300px;}
 	100% 		{left: 0px;}
+}
+
+.blink {
+	-webkit-animation: blink 0.1s infinite;
+	animation: blink 0.1s infinite;
+
+}
+
+@-webkit-keyframes blink {
+	0%, 100% 			{opacity: 0.5;}
+	50% 					{opacity: 1;}
+}
+
+@keyframes blink {
+	0%, 100% 			{opacity: 0.5;}
+	50% 					{opacity: 1;}
 }
 
 .side {
