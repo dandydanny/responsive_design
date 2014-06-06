@@ -3,6 +3,15 @@ $(document).ready(function() {
 	$('#menu-button').click(function() {
 		console.log("clicked");
 		// $('.nav').toggleClass( "hidden" );
-		$(".nav").slideDown();
+		$('.nav').removeClass( "hidden" );
+		$('.nav').addClass( "show" );
+		// $(".nav").slideDown();
+	});
+	$('.nav').click(function() {
+		console.log("clicked while open");
+		// $('.nav').toggleClass( "hidden" );
+		$('.nav').removeClass( "show" );
+		$('.nav').addClass( "hidden" );
+		// $(".nav").slideUp();
 	});
 });
