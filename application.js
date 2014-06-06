@@ -22,8 +22,11 @@ $(document).ready(function() {
 
 	$('.nav-links').click(function() {
 		console.log("clicked while open");
-		$(this).toggleClass( "blink" );
-		$('.body').removeClass( "shift-out" );
-		$('.body').addClass( "shift-in" );
+		$(this).toggleClass( "blink" );					// immediately blink the selected link
+
+		$('.body').delay(200).queue(function(){ // shift in body after small delay
+			$(this).addClass( "shift-in" );
+			$(this).removeClass( "shift-out" ).clearQueue();
+		});
 	});
 });

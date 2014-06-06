@@ -140,9 +140,8 @@ body {
 }
 
 .shift-in {
-	-webkit-animation: shift-in 2s;
-	animation: shift-in 2s;
-	-webkit-animation-delay: 1s;
+	-webkit-animation: shift-in 1s;
+	animation: shift-in 1s;
 /*	left: 0px;*/
 }
 
