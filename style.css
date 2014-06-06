@@ -143,9 +143,7 @@ body {
 	-webkit-animation: shift-in 1s;
 	animation: shift-in 1s;
 	left: 0px;
-
 }
-
 
 @-webkit-keyframes shift-in {
 	0% 			{left: 300px;}
