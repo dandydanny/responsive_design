@@ -15,7 +15,7 @@ HTML5, CSS3 media query, JQuery
 
 ## To-Do
 * ~~Implement hamburger icon menu~~ Implemented 2014/6/6 :-)
-* Mobile browser testing
+* ~~Mobile browser testing~~ Tested on 2014/6/8 using Galaxy Nexus and Nexus 7 (2012)
 * Retain structure on mobile, while allowing zoom
 
 ## Demo
