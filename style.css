@@ -264,11 +264,11 @@ hr {
 }
 
 /*800px = 50em*/
-@media (max-width: 50em) {
+@media (max-width: 700px) {
   .side {
   	position: relative;
 		width: 100%;
-		max-height: 35vh;
+		height: 250px;
 		background-size: cover;
   }
 
