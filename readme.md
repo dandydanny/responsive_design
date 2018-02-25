@@ -18,4 +18,4 @@ HTML5, CSS3 media query, JQuery
 * Retain structure on mobile, while allowing zoom
 
 ## Demo
-Visit [http://dandydanny.org/dbc/responsive](http://dandydanny.org/responsive), and resize your browser window to see layout changes.
+Visit [http://dandydanny.org/responsive](http://dandydanny.org/responsive), and resize your browser window to see layout changes.
